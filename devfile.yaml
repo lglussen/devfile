@@ -1,4 +1,4 @@
-apiVersion: 2.1.0
+schemaVersion: 2.1.0
 metadata:
   name: hca-team
   version: 1.0.0
@@ -24,7 +24,7 @@ projects:
         origin: 'https://github.com/lglussen/ocp-templates.git'
       checkoutFrom:
         revision: main
-  - name: ArgoCD Example
+  - name: argocd-example
     git:
       remotes:
         origin: 'https://github.com/lglussen/argocd-example.git'
