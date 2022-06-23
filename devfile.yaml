@@ -1,12 +1,32 @@
-apiVersion: 1.0.0
+apiVersion: 2.1.0
 metadata:
   name: hca-team
+  version: 1.0.0
 projects:
-  - name: Template-Examples
-    source:
-      type: git
-      location: 'https://gitlab.consulting.redhat.com/naps-hca/apps/templating.git'
-  - name: ArgoCD-Example
-    source:
-      type: git
-      location: 'https://gitlab.consulting.redhat.com/naps-hca/apps/hello-world.git'
+  - name: OpenShift Template
+    clonePath: ocp-template
+    git:
+      remotes:
+        origin: 'https://github.com/lglussen/ocp-templates.git'
+      checkoutFrom:
+        revision: main
+  - name: Kustomize Template
+    clonePath: kustomize
+    git:
+      remotes:
+        origin: 'https://github.com/lglussen/ocp-templates.git'
+      checkoutFrom:
+        revision: main
+  - name: Helm Template
+    clonePath: helm
+    git:
+      remotes:
+        origin: 'https://github.com/lglussen/ocp-templates.git'
+      checkoutFrom:
+        revision: main
+  - name: ArgoCD Example
+    git:
+      remotes:
+        origin: 'https://github.com/lglussen/argocd-example.git'
+      checkoutFrom:
+        revision: main
