@@ -3,21 +3,21 @@ metadata:
   name: hca-team
   version: 1.0.0
 projects:
-  - name: OpenShift Template
+  - name: openshift-template
     clonePath: ocp-template
     git:
       remotes:
         origin: 'https://github.com/lglussen/ocp-templates.git'
       checkoutFrom:
         revision: main
-  - name: Kustomize Template
+  - name: kustomize-template
     clonePath: kustomize
     git:
       remotes:
         origin: 'https://github.com/lglussen/ocp-templates.git'
       checkoutFrom:
         revision: main
-  - name: Helm Template
+  - name: helm-template
     clonePath: helm
     git:
       remotes:
